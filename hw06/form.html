@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> form </title>
+    <style>
+        #red {
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="red">한 번에 하나의 프로그램만 선택 가능합니다.</h2>
+    <form>
+        <fieldset>
+            <legend>프로그램 신청 양식</legend>
+            <h3>신청할 프로그램을 선택해주세요.</h3>
+            <input type="checkbox" name="program" value="rapeseed">유채꽃 음식 만들기
+            <p></p>
+            <input type="checkbox" name="program" value="lavender">라벤더 방향제 만들기
+            <p></p>
+            <input type="checkbox" name="program" value="maple">단풍 책갈피 만들기
+            <h3>신청할 시간을 입력해주세요.(숫자만 입력)</h3>
+            <p>시간 : <input type="text" name="time"></p>
+            <h3>신청할 인원수를 입력해주세요.(숫자만 입력)</h3>
+            <p>인원수 : <input type="text" name="many"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+</body>
+</html>

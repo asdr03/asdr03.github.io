@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 430_5 </title>
+    <style>
+        table, tr, th, td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="fruit00"></p>
+    <p id="fruit01"></p>
+    <p id="fruit02"></p>
+    <p id="fruit10"></p>
+    <p id="fruit11"></p>
+    <p id="fruit12"></p>
+    <p id="fruit20"></p>
+    <p id="fruit21"></p>
+    <p id="fruit22"></p>
+    <p id="fruit30"></p>
+    <p id="fruit31"></p>
+    <p id="fruit32"></p>
+
+    <script>
+        document.write("<table border='1'>");
+
+        var fruit=new Array (
+            ['이름', '가격', '개수'],
+            ['사과', 21000, 10],
+            ['참외', 18000, 20],
+            ['귤', 15000, 30]
+        );
+
+        document.write("<tr>");
+        for( var i=0; i<3; i++) {
+            var cname=document.getElementById("fruit0"+i);
+            document.write("<th>");
+            cname.textContent=fruit[0][i];
+            document.write("</th>");
+        }
+        document.write("</tr>");
+
+        for(var k=1; k<4; k++) {
+            document.write("<tr>");
+            for(var j=0; j<3; j++) {
+                var cname=document.getElementById("fruit"+k+j);
+                document.write("<td>");
+                cname.textContent=fruit[k][j];
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

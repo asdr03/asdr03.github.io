@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 430_4 </title>
+</head>
+
+<body>
+    <p id="fruit10"></p>
+    <p id="fruit20"></p>
+    <p id="fruit30"></p>
+    <p id="fruit11"></p>
+    <p id="fruit21"></p>
+    <p id="fruit31"></p>
+    <p id="fruit12"></p>
+    <p id="fruit22"></p>
+    <p id="fruit32"></p>
+    <p id="fruit13"></p>
+    <p id="fruit23"></p>
+    <p id="fruit33"></p>
+
+    <script>
+        var fruit=[
+            {name: '이름', price: '가격', num: '개수'},
+            {name: '사과', price: 21000, num: 10},
+            {name: '참외', price: 18000, num: 20},
+            {name: '귤', price: 15000, num: 30}
+        ]
+
+        for(var i=0; i<4; i++) {
+            var cname=document.getElementById("fruit1"+i);
+            cname.textContent=fruit[i].name;
+            var cname=document.getElementById("fruit2"+i);
+            cname.textContent=fruit[i].price;
+            var cname=document.getElementById("fruit3"+i);
+            cname.textContent=fruit[i].num;
+        }
+    </script>
+</body>
+
+</html>
